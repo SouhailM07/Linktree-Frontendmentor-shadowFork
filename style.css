@@ -1,87 +1,80 @@
 @charset "UTF-8";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 :root {
-    --darkgray:hsl(0, 0%, 12%);
-    --off-black: hsl(0, 0%, 8%);
-    --grey:hsl(0, 0%, 20%);
-    --white:hsl(0, 0%, 100%);
-    --green:hsl(75, 94%, 57%);
+  --darkgray: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --grey: hsl(0, 0%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --green: hsl(75, 94%, 57%);
 }
 
-body{
-    background-color: var(--off-black);
-    overflow: hidden;
+body {
+  background-color: var(--off-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-main{
-    background-color: var(--darkgray);
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    max-width: 26rem;       
-    border-radius: 1rem;
+main {
+  background-color: var(--darkgray);
+  margin: auto;
+  width: 24rem;
+  border-radius: 1rem;
 }
 
-h1,p{
-    text-align: center;
+p {
+  text-align: center;
 }
 
-img{
-    border-radius: 50%;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    width: 5rem;
+img {
+  border-radius: 50%;
+  margin: 1rem 0;
+  width: 5rem;
 }
 
-.highlight{
-    color: var(--green);
-    margin-bottom: 2rem;
-    padding-top: 1rem;
-    font-weight: bold;
+.highlight {
+  color: var(--green);
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  font-weight: bold;
 }
 
-#links{
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: .5rem;
+#links {
+  text-align: center;
+  padding: 0.5rem 0rem 1rem;
 }
 
-
-#links>a>p{
-    background-color: var(--grey);
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: .5rem;
-    cursor: pointer;
+#links > a > p {
+  background-color: var(--grey);
+  padding: 0.85rem;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 80%;
+  margin: 1rem auto;
 }
 
-
-#presentation{
-    text-align: center;
-    align-items: center;
-    margin-top: 2rem;
-    color: var(--white);
+#presentation {
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: var(--white);
 }
 
-a{
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bold;
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
 }
 
-#links>a>p:hover{
-    background-color: var(--green);
-    transition: 500ms;
+#links > a > p:hover {
+  background-color: var(--green);
+  transition: 0.5s;
+  color: black;
 }
-
-
